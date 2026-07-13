@@ -1,0 +1,4 @@
+Scenario,Strategy_Description,Total_Calls,Subscriptions,Conversion_Rate_Pct,Total_Cost_INR,Cost_Lakh_INR,Cost_Per_Acquisition,Calls_Eliminated,Spend_Saved_Lakh_INR,Calls_Per_Subscription
+A — Current: Broad Outreach,"All 45,211 customers, no targeting filter",45211,5289,11.7,6781650,67.82,1282.0,0,0.0,8.5
+B — Proposed: Targeted Outreach,High-propensity segments + 3-call cap,18232,3187,17.48,2734800,27.35,858.0,26979,40.47,5.7
+C — Premium: Warm Leads + High Balance,"poutcome=success OR balance >= 5,000 EUR",4223,1330,31.49,633450,6.33,476.0,40988,61.48,3.2

@@ -1,0 +1,654 @@
+age_band,job,balance_tier,debt_burden_flag,poutcome,Contacts,Subscriptions,Conversion_Rate_Pct
+1. Young (18-30),admin.,1. Negative (<0),Debt Free,unknown,18,4,22.22
+1. Young (18-30),admin.,1. Negative (<0),Dual Debt Burden,unknown,15,3,20.0
+1. Young (18-30),admin.,1. Negative (<0),Housing Loan Only,unknown,70,7,10.0
+1. Young (18-30),admin.,1. Negative (<0),Personal Loan Only,unknown,18,3,16.67
+1. Young (18-30),admin.,2. Low (0-999),Debt Free,failure,18,4,22.22
+1. Young (18-30),admin.,2. Low (0-999),Debt Free,success,13,6,46.15
+1. Young (18-30),admin.,2. Low (0-999),Debt Free,unknown,152,28,18.42
+1. Young (18-30),admin.,2. Low (0-999),Dual Debt Burden,failure,11,0,0.0
+1. Young (18-30),admin.,2. Low (0-999),Dual Debt Burden,unknown,58,4,6.9
+1. Young (18-30),admin.,2. Low (0-999),Housing Loan Only,failure,35,7,20.0
+1. Young (18-30),admin.,2. Low (0-999),Housing Loan Only,other,21,1,4.76
+1. Young (18-30),admin.,2. Low (0-999),Housing Loan Only,unknown,252,22,8.73
+1. Young (18-30),admin.,2. Low (0-999),Personal Loan Only,unknown,46,6,13.04
+1. Young (18-30),admin.,3. Medium (1K-5K),Debt Free,success,11,9,81.82
+1. Young (18-30),admin.,3. Medium (1K-5K),Debt Free,unknown,51,13,25.49
+1. Young (18-30),admin.,3. Medium (1K-5K),Housing Loan Only,failure,10,1,10.0
+1. Young (18-30),admin.,3. Medium (1K-5K),Housing Loan Only,unknown,69,5,7.25
+1. Young (18-30),blue-collar,1. Negative (<0),Debt Free,unknown,35,3,8.57
+1. Young (18-30),blue-collar,1. Negative (<0),Dual Debt Burden,unknown,43,3,6.98
+1. Young (18-30),blue-collar,1. Negative (<0),Housing Loan Only,failure,17,2,11.76
+1. Young (18-30),blue-collar,1. Negative (<0),Housing Loan Only,unknown,156,12,7.69
+1. Young (18-30),blue-collar,1. Negative (<0),Personal Loan Only,unknown,25,3,12.0
+1. Young (18-30),blue-collar,2. Low (0-999),Debt Free,success,13,13,100.0
+1. Young (18-30),blue-collar,2. Low (0-999),Debt Free,unknown,125,19,15.2
+1. Young (18-30),blue-collar,2. Low (0-999),Dual Debt Burden,failure,12,1,8.33
+1. Young (18-30),blue-collar,2. Low (0-999),Dual Debt Burden,unknown,99,12,12.12
+1. Young (18-30),blue-collar,2. Low (0-999),Housing Loan Only,failure,49,1,2.04
+1. Young (18-30),blue-collar,2. Low (0-999),Housing Loan Only,other,32,1,3.12
+1. Young (18-30),blue-collar,2. Low (0-999),Housing Loan Only,unknown,453,39,8.61
+1. Young (18-30),blue-collar,2. Low (0-999),Personal Loan Only,unknown,51,8,15.69
+1. Young (18-30),blue-collar,3. Medium (1K-5K),Debt Free,unknown,37,8,21.62
+1. Young (18-30),blue-collar,3. Medium (1K-5K),Dual Debt Burden,unknown,21,0,0.0
+1. Young (18-30),blue-collar,3. Medium (1K-5K),Housing Loan Only,failure,12,0,0.0
+1. Young (18-30),blue-collar,3. Medium (1K-5K),Housing Loan Only,other,10,1,10.0
+1. Young (18-30),blue-collar,3. Medium (1K-5K),Housing Loan Only,unknown,124,8,6.45
+1. Young (18-30),blue-collar,4. High (5K-20K),Housing Loan Only,unknown,27,4,14.81
+1. Young (18-30),entrepreneur,2. Low (0-999),Debt Free,unknown,18,3,16.67
+1. Young (18-30),entrepreneur,2. Low (0-999),Dual Debt Burden,unknown,15,1,6.67
+1. Young (18-30),entrepreneur,2. Low (0-999),Housing Loan Only,unknown,40,1,2.5
+1. Young (18-30),entrepreneur,3. Medium (1K-5K),Housing Loan Only,unknown,11,1,9.09
+1. Young (18-30),housemaid,2. Low (0-999),Debt Free,unknown,10,1,10.0
+1. Young (18-30),housemaid,2. Low (0-999),Housing Loan Only,unknown,21,1,4.76
+1. Young (18-30),management,1. Negative (<0),Debt Free,unknown,34,2,5.88
+1. Young (18-30),management,1. Negative (<0),Housing Loan Only,unknown,52,5,9.62
+1. Young (18-30),management,1. Negative (<0),Personal Loan Only,unknown,13,0,0.0
+1. Young (18-30),management,2. Low (0-999),Debt Free,failure,25,9,36.0
+1. Young (18-30),management,2. Low (0-999),Debt Free,other,10,1,10.0
+1. Young (18-30),management,2. Low (0-999),Debt Free,success,33,25,75.76
+1. Young (18-30),management,2. Low (0-999),Debt Free,unknown,238,45,18.91
+1. Young (18-30),management,2. Low (0-999),Dual Debt Burden,unknown,46,3,6.52
+1. Young (18-30),management,2. Low (0-999),Housing Loan Only,failure,23,3,13.04
+1. Young (18-30),management,2. Low (0-999),Housing Loan Only,other,23,8,34.78
+1. Young (18-30),management,2. Low (0-999),Housing Loan Only,unknown,227,24,10.57
+1. Young (18-30),management,2. Low (0-999),Personal Loan Only,unknown,36,2,5.56
+1. Young (18-30),management,3. Medium (1K-5K),Debt Free,other,11,6,54.55
+1. Young (18-30),management,3. Medium (1K-5K),Debt Free,success,12,8,66.67
+1. Young (18-30),management,3. Medium (1K-5K),Debt Free,unknown,126,41,32.54
+1. Young (18-30),management,3. Medium (1K-5K),Dual Debt Burden,unknown,14,0,0.0
+1. Young (18-30),management,3. Medium (1K-5K),Housing Loan Only,failure,16,1,6.25
+1. Young (18-30),management,3. Medium (1K-5K),Housing Loan Only,unknown,110,12,10.91
+1. Young (18-30),management,4. High (5K-20K),Debt Free,unknown,39,11,28.21
+1. Young (18-30),management,4. High (5K-20K),Housing Loan Only,unknown,28,4,14.29
+1. Young (18-30),self-employed,1. Negative (<0),Housing Loan Only,unknown,13,1,7.69
+1. Young (18-30),self-employed,2. Low (0-999),Debt Free,unknown,46,10,21.74
+1. Young (18-30),self-employed,2. Low (0-999),Dual Debt Burden,unknown,14,1,7.14
+1. Young (18-30),self-employed,2. Low (0-999),Housing Loan Only,unknown,45,5,11.11
+1. Young (18-30),self-employed,2. Low (0-999),Personal Loan Only,unknown,13,1,7.69
+1. Young (18-30),self-employed,3. Medium (1K-5K),Debt Free,unknown,28,9,32.14
+1. Young (18-30),self-employed,3. Medium (1K-5K),Housing Loan Only,unknown,10,2,20.0
+1. Young (18-30),services,1. Negative (<0),Debt Free,unknown,23,0,0.0
+1. Young (18-30),services,1. Negative (<0),Dual Debt Burden,unknown,30,2,6.67
+1. Young (18-30),services,1. Negative (<0),Housing Loan Only,unknown,73,9,12.33
+1. Young (18-30),services,1. Negative (<0),Personal Loan Only,unknown,18,3,16.67
+1. Young (18-30),services,2. Low (0-999),Debt Free,failure,10,2,20.0
+1. Young (18-30),services,2. Low (0-999),Debt Free,unknown,101,20,19.8
+1. Young (18-30),services,2. Low (0-999),Dual Debt Burden,unknown,61,2,3.28
+1. Young (18-30),services,2. Low (0-999),Housing Loan Only,failure,23,2,8.7
+1. Young (18-30),services,2. Low (0-999),Housing Loan Only,other,24,2,8.33
+1. Young (18-30),services,2. Low (0-999),Housing Loan Only,unknown,222,19,8.56
+1. Young (18-30),services,2. Low (0-999),Personal Loan Only,unknown,39,3,7.69
+1. Young (18-30),services,3. Medium (1K-5K),Debt Free,unknown,27,5,18.52
+1. Young (18-30),services,3. Medium (1K-5K),Dual Debt Burden,unknown,11,0,0.0
+1. Young (18-30),services,3. Medium (1K-5K),Housing Loan Only,unknown,66,6,9.09
+1. Young (18-30),services,4. High (5K-20K),Housing Loan Only,unknown,14,1,7.14
+1. Young (18-30),student,1. Negative (<0),Debt Free,unknown,23,6,26.09
+1. Young (18-30),student,1. Negative (<0),Housing Loan Only,unknown,11,0,0.0
+1. Young (18-30),student,2. Low (0-999),Debt Free,failure,33,13,39.39
+1. Young (18-30),student,2. Low (0-999),Debt Free,other,30,12,40.0
+1. Young (18-30),student,2. Low (0-999),Debt Free,success,46,34,73.91
+1. Young (18-30),student,2. Low (0-999),Debt Free,unknown,233,77,33.05
+1. Young (18-30),student,2. Low (0-999),Housing Loan Only,failure,10,0,0.0
+1. Young (18-30),student,2. Low (0-999),Housing Loan Only,unknown,104,9,8.65
+1. Young (18-30),student,3. Medium (1K-5K),Debt Free,failure,22,8,36.36
+1. Young (18-30),student,3. Medium (1K-5K),Debt Free,other,14,9,64.29
+1. Young (18-30),student,3. Medium (1K-5K),Debt Free,success,17,10,58.82
+1. Young (18-30),student,3. Medium (1K-5K),Debt Free,unknown,98,31,31.63
+1. Young (18-30),student,3. Medium (1K-5K),Housing Loan Only,unknown,30,3,10.0
+1. Young (18-30),student,4. High (5K-20K),Debt Free,unknown,28,6,21.43
+1. Young (18-30),technician,1. Negative (<0),Debt Free,unknown,31,0,0.0
+1. Young (18-30),technician,1. Negative (<0),Dual Debt Burden,unknown,29,1,3.45
+1. Young (18-30),technician,1. Negative (<0),Housing Loan Only,failure,11,4,36.36
+1. Young (18-30),technician,1. Negative (<0),Housing Loan Only,unknown,69,4,5.8
+1. Young (18-30),technician,1. Negative (<0),Personal Loan Only,unknown,22,4,18.18
+1. Young (18-30),technician,2. Low (0-999),Debt Free,failure,13,4,30.77
+1. Young (18-30),technician,2. Low (0-999),Debt Free,success,10,7,70.0
+1. Young (18-30),technician,2. Low (0-999),Debt Free,unknown,185,38,20.54
+1. Young (18-30),technician,2. Low (0-999),Dual Debt Burden,failure,11,1,9.09
+1. Young (18-30),technician,2. Low (0-999),Dual Debt Burden,unknown,71,3,4.23
+1. Young (18-30),technician,2. Low (0-999),Housing Loan Only,failure,42,3,7.14
+1. Young (18-30),technician,2. Low (0-999),Housing Loan Only,other,13,0,0.0
+1. Young (18-30),technician,2. Low (0-999),Housing Loan Only,unknown,259,24,9.27
+1. Young (18-30),technician,2. Low (0-999),Personal Loan Only,unknown,50,8,16.0
+1. Young (18-30),technician,3. Medium (1K-5K),Debt Free,success,11,4,36.36
+1. Young (18-30),technician,3. Medium (1K-5K),Debt Free,unknown,81,26,32.1
+1. Young (18-30),technician,3. Medium (1K-5K),Dual Debt Burden,unknown,18,1,5.56
+1. Young (18-30),technician,3. Medium (1K-5K),Housing Loan Only,failure,15,3,20.0
+1. Young (18-30),technician,3. Medium (1K-5K),Housing Loan Only,unknown,106,12,11.32
+1. Young (18-30),technician,3. Medium (1K-5K),Personal Loan Only,unknown,12,0,0.0
+1. Young (18-30),technician,4. High (5K-20K),Debt Free,unknown,11,2,18.18
+1. Young (18-30),technician,4. High (5K-20K),Housing Loan Only,unknown,12,0,0.0
+1. Young (18-30),unemployed,1. Negative (<0),Housing Loan Only,unknown,14,0,0.0
+1. Young (18-30),unemployed,2. Low (0-999),Debt Free,unknown,63,13,20.63
+1. Young (18-30),unemployed,2. Low (0-999),Housing Loan Only,unknown,24,1,4.17
+1. Young (18-30),unemployed,3. Medium (1K-5K),Debt Free,unknown,35,8,22.86
+2. Early Career (31-40),admin.,1. Negative (<0),Debt Free,unknown,78,3,3.85
+2. Early Career (31-40),admin.,1. Negative (<0),Dual Debt Burden,unknown,56,3,5.36
+2. Early Career (31-40),admin.,1. Negative (<0),Housing Loan Only,failure,20,3,15.0
+2. Early Career (31-40),admin.,1. Negative (<0),Housing Loan Only,unknown,157,7,4.46
+2. Early Career (31-40),admin.,1. Negative (<0),Personal Loan Only,unknown,34,3,8.82
+2. Early Career (31-40),admin.,2. Low (0-999),Debt Free,failure,39,9,23.08
+2. Early Career (31-40),admin.,2. Low (0-999),Debt Free,other,16,5,31.25
+2. Early Career (31-40),admin.,2. Low (0-999),Debt Free,success,18,8,44.44
+2. Early Career (31-40),admin.,2. Low (0-999),Debt Free,unknown,242,32,13.22
+2. Early Career (31-40),admin.,2. Low (0-999),Dual Debt Burden,failure,15,0,0.0
+2. Early Career (31-40),admin.,2. Low (0-999),Dual Debt Burden,unknown,109,10,9.17
+2. Early Career (31-40),admin.,2. Low (0-999),Housing Loan Only,failure,109,14,12.84
+2. Early Career (31-40),admin.,2. Low (0-999),Housing Loan Only,other,42,5,11.9
+2. Early Career (31-40),admin.,2. Low (0-999),Housing Loan Only,success,22,14,63.64
+2. Early Career (31-40),admin.,2. Low (0-999),Housing Loan Only,unknown,507,35,6.9
+2. Early Career (31-40),admin.,2. Low (0-999),Personal Loan Only,failure,11,2,18.18
+2. Early Career (31-40),admin.,2. Low (0-999),Personal Loan Only,unknown,48,2,4.17
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Debt Free,failure,12,3,25.0
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Debt Free,unknown,114,18,15.79
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Dual Debt Burden,unknown,34,1,2.94
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Housing Loan Only,failure,47,5,10.64
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Housing Loan Only,other,12,1,8.33
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Housing Loan Only,success,13,6,46.15
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Housing Loan Only,unknown,205,12,5.85
+2. Early Career (31-40),admin.,3. Medium (1K-5K),Personal Loan Only,unknown,13,2,15.38
+2. Early Career (31-40),admin.,4. High (5K-20K),Debt Free,unknown,19,2,10.53
+2. Early Career (31-40),admin.,4. High (5K-20K),Housing Loan Only,unknown,26,1,3.85
+2. Early Career (31-40),blue-collar,1. Negative (<0),Debt Free,failure,10,1,10.0
+2. Early Career (31-40),blue-collar,1. Negative (<0),Debt Free,unknown,94,4,4.26
+2. Early Career (31-40),blue-collar,1. Negative (<0),Dual Debt Burden,failure,17,2,11.76
+2. Early Career (31-40),blue-collar,1. Negative (<0),Dual Debt Burden,unknown,121,7,5.79
+2. Early Career (31-40),blue-collar,1. Negative (<0),Housing Loan Only,failure,49,0,0.0
+2. Early Career (31-40),blue-collar,1. Negative (<0),Housing Loan Only,other,30,4,13.33
+2. Early Career (31-40),blue-collar,1. Negative (<0),Housing Loan Only,unknown,371,12,3.23
+2. Early Career (31-40),blue-collar,1. Negative (<0),Personal Loan Only,unknown,33,0,0.0
+2. Early Career (31-40),blue-collar,2. Low (0-999),Debt Free,failure,24,4,16.67
+2. Early Career (31-40),blue-collar,2. Low (0-999),Debt Free,other,13,2,15.38
+2. Early Career (31-40),blue-collar,2. Low (0-999),Debt Free,unknown,281,28,9.96
+2. Early Career (31-40),blue-collar,2. Low (0-999),Dual Debt Burden,failure,37,3,8.11
+2. Early Career (31-40),blue-collar,2. Low (0-999),Dual Debt Burden,other,13,0,0.0
+2. Early Career (31-40),blue-collar,2. Low (0-999),Dual Debt Burden,unknown,219,11,5.02
+2. Early Career (31-40),blue-collar,2. Low (0-999),Housing Loan Only,failure,216,11,5.09
+2. Early Career (31-40),blue-collar,2. Low (0-999),Housing Loan Only,other,61,6,9.84
+2. Early Career (31-40),blue-collar,2. Low (0-999),Housing Loan Only,success,19,6,31.58
+2. Early Career (31-40),blue-collar,2. Low (0-999),Housing Loan Only,unknown,1165,62,5.32
+2. Early Career (31-40),blue-collar,2. Low (0-999),Personal Loan Only,unknown,86,2,2.33
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Debt Free,failure,18,1,5.56
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Debt Free,unknown,154,17,11.04
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Dual Debt Burden,failure,14,0,0.0
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Dual Debt Burden,unknown,78,4,5.13
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Housing Loan Only,failure,97,7,7.22
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Housing Loan Only,other,33,3,9.09
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Housing Loan Only,unknown,475,33,6.95
+2. Early Career (31-40),blue-collar,3. Medium (1K-5K),Personal Loan Only,unknown,17,3,17.65
+2. Early Career (31-40),blue-collar,4. High (5K-20K),Debt Free,unknown,35,1,2.86
+2. Early Career (31-40),blue-collar,4. High (5K-20K),Dual Debt Burden,unknown,10,0,0.0
+2. Early Career (31-40),blue-collar,4. High (5K-20K),Housing Loan Only,failure,18,1,5.56
+2. Early Career (31-40),blue-collar,4. High (5K-20K),Housing Loan Only,unknown,83,3,3.61
+2. Early Career (31-40),entrepreneur,1. Negative (<0),Debt Free,unknown,25,3,12.0
+2. Early Career (31-40),entrepreneur,1. Negative (<0),Dual Debt Burden,unknown,19,2,10.53
+2. Early Career (31-40),entrepreneur,1. Negative (<0),Housing Loan Only,unknown,46,4,8.7
+2. Early Career (31-40),entrepreneur,2. Low (0-999),Debt Free,unknown,68,4,5.88
+2. Early Career (31-40),entrepreneur,2. Low (0-999),Dual Debt Burden,unknown,36,3,8.33
+2. Early Career (31-40),entrepreneur,2. Low (0-999),Housing Loan Only,failure,26,1,3.85
+2. Early Career (31-40),entrepreneur,2. Low (0-999),Housing Loan Only,unknown,108,4,3.7
+2. Early Career (31-40),entrepreneur,2. Low (0-999),Personal Loan Only,unknown,22,2,9.09
+2. Early Career (31-40),entrepreneur,3. Medium (1K-5K),Debt Free,unknown,31,3,9.68
+2. Early Career (31-40),entrepreneur,3. Medium (1K-5K),Dual Debt Burden,unknown,14,0,0.0
+2. Early Career (31-40),entrepreneur,3. Medium (1K-5K),Housing Loan Only,failure,15,3,20.0
+2. Early Career (31-40),entrepreneur,3. Medium (1K-5K),Housing Loan Only,unknown,54,3,5.56
+2. Early Career (31-40),entrepreneur,3. Medium (1K-5K),Personal Loan Only,unknown,10,2,20.0
+2. Early Career (31-40),entrepreneur,4. High (5K-20K),Housing Loan Only,unknown,16,1,6.25
+2. Early Career (31-40),housemaid,1. Negative (<0),Debt Free,unknown,22,0,0.0
+2. Early Career (31-40),housemaid,1. Negative (<0),Housing Loan Only,unknown,27,1,3.7
+2. Early Career (31-40),housemaid,2. Low (0-999),Debt Free,unknown,72,3,4.17
+2. Early Career (31-40),housemaid,2. Low (0-999),Housing Loan Only,unknown,62,3,4.84
+2. Early Career (31-40),housemaid,3. Medium (1K-5K),Debt Free,unknown,33,3,9.09
+2. Early Career (31-40),housemaid,3. Medium (1K-5K),Housing Loan Only,failure,11,1,9.09
+2. Early Career (31-40),housemaid,3. Medium (1K-5K),Housing Loan Only,unknown,22,2,9.09
+2. Early Career (31-40),management,1. Negative (<0),Debt Free,unknown,202,7,3.47
+2. Early Career (31-40),management,1. Negative (<0),Dual Debt Burden,unknown,60,2,3.33
+2. Early Career (31-40),management,1. Negative (<0),Housing Loan Only,failure,33,4,12.12
+2. Early Career (31-40),management,1. Negative (<0),Housing Loan Only,other,17,1,5.88
+2. Early Career (31-40),management,1. Negative (<0),Housing Loan Only,unknown,229,14,6.11
+2. Early Career (31-40),management,1. Negative (<0),Personal Loan Only,unknown,29,2,6.9
+2. Early Career (31-40),management,2. Low (0-999),Debt Free,failure,74,18,24.32
+2. Early Career (31-40),management,2. Low (0-999),Debt Free,other,23,10,43.48
+2. Early Career (31-40),management,2. Low (0-999),Debt Free,success,54,40,74.07
+2. Early Career (31-40),management,2. Low (0-999),Debt Free,unknown,700,89,12.71
+2. Early Career (31-40),management,2. Low (0-999),Dual Debt Burden,failure,23,3,13.04
+2. Early Career (31-40),management,2. Low (0-999),Dual Debt Burden,unknown,126,9,7.14
+2. Early Career (31-40),management,2. Low (0-999),Housing Loan Only,failure,157,17,10.83
+2. Early Career (31-40),management,2. Low (0-999),Housing Loan Only,other,44,6,13.64
+2. Early Career (31-40),management,2. Low (0-999),Housing Loan Only,success,22,10,45.45
+2. Early Career (31-40),management,2. Low (0-999),Housing Loan Only,unknown,720,51,7.08
+2. Early Career (31-40),management,2. Low (0-999),Personal Loan Only,unknown,97,11,11.34
+2. Early Career (31-40),management,3. Medium (1K-5K),Debt Free,failure,52,15,28.85
+2. Early Career (31-40),management,3. Medium (1K-5K),Debt Free,other,22,8,36.36
+2. Early Career (31-40),management,3. Medium (1K-5K),Debt Free,success,40,25,62.5
+2. Early Career (31-40),management,3. Medium (1K-5K),Debt Free,unknown,374,68,18.18
+2. Early Career (31-40),management,3. Medium (1K-5K),Dual Debt Burden,failure,12,2,16.67
+2. Early Career (31-40),management,3. Medium (1K-5K),Dual Debt Burden,unknown,64,6,9.38
+2. Early Career (31-40),management,3. Medium (1K-5K),Housing Loan Only,failure,92,13,14.13
+2. Early Career (31-40),management,3. Medium (1K-5K),Housing Loan Only,other,35,8,22.86
+2. Early Career (31-40),management,3. Medium (1K-5K),Housing Loan Only,success,17,8,47.06
+2. Early Career (31-40),management,3. Medium (1K-5K),Housing Loan Only,unknown,421,38,9.03
+2. Early Career (31-40),management,3. Medium (1K-5K),Personal Loan Only,unknown,36,1,2.78
+2. Early Career (31-40),management,4. High (5K-20K),Debt Free,failure,20,7,35.0
+2. Early Career (31-40),management,4. High (5K-20K),Debt Free,success,10,6,60.0
+2. Early Career (31-40),management,4. High (5K-20K),Debt Free,unknown,100,17,17.0
+2. Early Career (31-40),management,4. High (5K-20K),Dual Debt Burden,unknown,11,1,9.09
+2. Early Career (31-40),management,4. High (5K-20K),Housing Loan Only,failure,32,4,12.5
+2. Early Career (31-40),management,4. High (5K-20K),Housing Loan Only,other,10,1,10.0
+2. Early Career (31-40),management,4. High (5K-20K),Housing Loan Only,unknown,97,9,9.28
+2. Early Career (31-40),management,5. Very High (20K+),Debt Free,unknown,14,0,0.0
+2. Early Career (31-40),retired,2. Low (0-999),Debt Free,unknown,10,0,0.0
+2. Early Career (31-40),self-employed,1. Negative (<0),Debt Free,unknown,23,1,4.35
+2. Early Career (31-40),self-employed,1. Negative (<0),Housing Loan Only,unknown,31,2,6.45
+2. Early Career (31-40),self-employed,2. Low (0-999),Debt Free,failure,11,1,9.09
+2. Early Career (31-40),self-employed,2. Low (0-999),Debt Free,unknown,105,10,9.52
+2. Early Career (31-40),self-employed,2. Low (0-999),Dual Debt Burden,unknown,25,1,4.0
+2. Early Career (31-40),self-employed,2. Low (0-999),Housing Loan Only,failure,29,0,0.0
+2. Early Career (31-40),self-employed,2. Low (0-999),Housing Loan Only,unknown,113,7,6.19
+2. Early Career (31-40),self-employed,2. Low (0-999),Personal Loan Only,unknown,21,0,0.0
+2. Early Career (31-40),self-employed,3. Medium (1K-5K),Debt Free,unknown,76,14,18.42
+2. Early Career (31-40),self-employed,3. Medium (1K-5K),Housing Loan Only,failure,10,0,0.0
+2. Early Career (31-40),self-employed,3. Medium (1K-5K),Housing Loan Only,unknown,62,7,11.29
+2. Early Career (31-40),self-employed,4. High (5K-20K),Debt Free,unknown,18,2,11.11
+2. Early Career (31-40),services,1. Negative (<0),Debt Free,unknown,51,4,7.84
+2. Early Career (31-40),services,1. Negative (<0),Dual Debt Burden,unknown,50,0,0.0
+2. Early Career (31-40),services,1. Negative (<0),Housing Loan Only,failure,20,0,0.0
+2. Early Career (31-40),services,1. Negative (<0),Housing Loan Only,unknown,188,12,6.38
+2. Early Career (31-40),services,1. Negative (<0),Personal Loan Only,unknown,28,1,3.57
+2. Early Career (31-40),services,2. Low (0-999),Debt Free,failure,14,3,21.43
+2. Early Career (31-40),services,2. Low (0-999),Debt Free,success,11,10,90.91
+2. Early Career (31-40),services,2. Low (0-999),Debt Free,unknown,173,17,9.83
+2. Early Career (31-40),services,2. Low (0-999),Dual Debt Burden,failure,19,1,5.26
+2. Early Career (31-40),services,2. Low (0-999),Dual Debt Burden,unknown,100,4,4.0
+2. Early Career (31-40),services,2. Low (0-999),Housing Loan Only,failure,85,3,3.53
+2. Early Career (31-40),services,2. Low (0-999),Housing Loan Only,other,31,2,6.45
+2. Early Career (31-40),services,2. Low (0-999),Housing Loan Only,unknown,435,28,6.44
+2. Early Career (31-40),services,2. Low (0-999),Personal Loan Only,unknown,43,6,13.95
+2. Early Career (31-40),services,3. Medium (1K-5K),Debt Free,success,12,10,83.33
+2. Early Career (31-40),services,3. Medium (1K-5K),Debt Free,unknown,85,18,21.18
+2. Early Career (31-40),services,3. Medium (1K-5K),Dual Debt Burden,unknown,36,1,2.78
+2. Early Career (31-40),services,3. Medium (1K-5K),Housing Loan Only,failure,39,5,12.82
+2. Early Career (31-40),services,3. Medium (1K-5K),Housing Loan Only,other,12,0,0.0
+2. Early Career (31-40),services,3. Medium (1K-5K),Housing Loan Only,unknown,147,10,6.8
+2. Early Career (31-40),services,3. Medium (1K-5K),Personal Loan Only,unknown,16,2,12.5
+2. Early Career (31-40),services,4. High (5K-20K),Debt Free,unknown,14,2,14.29
+2. Early Career (31-40),services,4. High (5K-20K),Housing Loan Only,unknown,34,4,11.76
+2. Early Career (31-40),student,2. Low (0-999),Debt Free,unknown,31,5,16.13
+2. Early Career (31-40),student,2. Low (0-999),Housing Loan Only,unknown,25,2,8.0
+2. Early Career (31-40),student,3. Medium (1K-5K),Debt Free,unknown,20,9,45.0
+2. Early Career (31-40),student,3. Medium (1K-5K),Housing Loan Only,unknown,12,0,0.0
+2. Early Career (31-40),technician,1. Negative (<0),Debt Free,unknown,191,9,4.71
+2. Early Career (31-40),technician,1. Negative (<0),Dual Debt Burden,unknown,68,1,1.47
+2. Early Career (31-40),technician,1. Negative (<0),Housing Loan Only,failure,24,1,4.17
+2. Early Career (31-40),technician,1. Negative (<0),Housing Loan Only,other,11,0,0.0
+2. Early Career (31-40),technician,1. Negative (<0),Housing Loan Only,unknown,194,12,6.19
+2. Early Career (31-40),technician,1. Negative (<0),Personal Loan Only,unknown,34,1,2.94
+2. Early Career (31-40),technician,2. Low (0-999),Debt Free,failure,40,7,17.5
+2. Early Career (31-40),technician,2. Low (0-999),Debt Free,other,18,5,27.78
+2. Early Career (31-40),technician,2. Low (0-999),Debt Free,success,23,19,82.61
+2. Early Career (31-40),technician,2. Low (0-999),Debt Free,unknown,663,58,8.75
+2. Early Career (31-40),technician,2. Low (0-999),Dual Debt Burden,failure,36,3,8.33
+2. Early Career (31-40),technician,2. Low (0-999),Dual Debt Burden,other,11,0,0.0
+2. Early Career (31-40),technician,2. Low (0-999),Dual Debt Burden,unknown,160,8,5.0
+2. Early Career (31-40),technician,2. Low (0-999),Housing Loan Only,failure,138,16,11.59
+2. Early Career (31-40),technician,2. Low (0-999),Housing Loan Only,other,44,3,6.82
+2. Early Career (31-40),technician,2. Low (0-999),Housing Loan Only,success,23,11,47.83
+2. Early Career (31-40),technician,2. Low (0-999),Housing Loan Only,unknown,615,41,6.67
+2. Early Career (31-40),technician,2. Low (0-999),Personal Loan Only,unknown,84,5,5.95
+2. Early Career (31-40),technician,3. Medium (1K-5K),Debt Free,failure,28,8,28.57
+2. Early Career (31-40),technician,3. Medium (1K-5K),Debt Free,other,14,7,50.0
+2. Early Career (31-40),technician,3. Medium (1K-5K),Debt Free,success,21,12,57.14
+2. Early Career (31-40),technician,3. Medium (1K-5K),Debt Free,unknown,251,40,15.94
+2. Early Career (31-40),technician,3. Medium (1K-5K),Dual Debt Burden,failure,11,1,9.09
+2. Early Career (31-40),technician,3. Medium (1K-5K),Dual Debt Burden,unknown,49,1,2.04
+2. Early Career (31-40),technician,3. Medium (1K-5K),Housing Loan Only,failure,63,7,11.11
+2. Early Career (31-40),technician,3. Medium (1K-5K),Housing Loan Only,other,28,5,17.86
+2. Early Career (31-40),technician,3. Medium (1K-5K),Housing Loan Only,success,18,7,38.89
+2. Early Career (31-40),technician,3. Medium (1K-5K),Housing Loan Only,unknown,299,35,11.71
+2. Early Career (31-40),technician,3. Medium (1K-5K),Personal Loan Only,unknown,27,1,3.7
+2. Early Career (31-40),technician,4. High (5K-20K),Debt Free,unknown,65,11,16.92
+2. Early Career (31-40),technician,4. High (5K-20K),Housing Loan Only,failure,19,2,10.53
+2. Early Career (31-40),technician,4. High (5K-20K),Housing Loan Only,unknown,74,8,10.81
+2. Early Career (31-40),unemployed,1. Negative (<0),Debt Free,unknown,25,1,4.0
+2. Early Career (31-40),unemployed,1. Negative (<0),Housing Loan Only,unknown,23,2,8.7
+2. Early Career (31-40),unemployed,2. Low (0-999),Debt Free,unknown,93,13,13.98
+2. Early Career (31-40),unemployed,2. Low (0-999),Dual Debt Burden,unknown,10,1,10.0
+2. Early Career (31-40),unemployed,2. Low (0-999),Housing Loan Only,failure,16,1,6.25
+2. Early Career (31-40),unemployed,2. Low (0-999),Housing Loan Only,unknown,98,6,6.12
+2. Early Career (31-40),unemployed,3. Medium (1K-5K),Debt Free,unknown,55,10,18.18
+2. Early Career (31-40),unemployed,3. Medium (1K-5K),Housing Loan Only,unknown,41,4,9.76
+2. Early Career (31-40),unemployed,4. High (5K-20K),Debt Free,unknown,15,2,13.33
+2. Early Career (31-40),unemployed,4. High (5K-20K),Housing Loan Only,unknown,10,0,0.0
+2. Early Career (31-40),unknown,2. Low (0-999),Debt Free,unknown,17,1,5.88
+2. Early Career (31-40),unknown,3. Medium (1K-5K),Debt Free,unknown,13,0,0.0
+3. Mid Career (41-50),admin.,1. Negative (<0),Debt Free,unknown,45,3,6.67
+3. Mid Career (41-50),admin.,1. Negative (<0),Dual Debt Burden,unknown,31,0,0.0
+3. Mid Career (41-50),admin.,1. Negative (<0),Housing Loan Only,failure,13,0,0.0
+3. Mid Career (41-50),admin.,1. Negative (<0),Housing Loan Only,unknown,87,1,1.15
+3. Mid Career (41-50),admin.,1. Negative (<0),Personal Loan Only,unknown,24,2,8.33
+3. Mid Career (41-50),admin.,2. Low (0-999),Debt Free,other,12,2,16.67
+3. Mid Career (41-50),admin.,2. Low (0-999),Debt Free,success,14,10,71.43
+3. Mid Career (41-50),admin.,2. Low (0-999),Debt Free,unknown,141,19,13.48
+3. Mid Career (41-50),admin.,2. Low (0-999),Dual Debt Burden,failure,14,0,0.0
+3. Mid Career (41-50),admin.,2. Low (0-999),Dual Debt Burden,unknown,63,4,6.35
+3. Mid Career (41-50),admin.,2. Low (0-999),Housing Loan Only,failure,54,2,3.7
+3. Mid Career (41-50),admin.,2. Low (0-999),Housing Loan Only,other,16,0,0.0
+3. Mid Career (41-50),admin.,2. Low (0-999),Housing Loan Only,success,11,9,81.82
+3. Mid Career (41-50),admin.,2. Low (0-999),Housing Loan Only,unknown,257,22,8.56
+3. Mid Career (41-50),admin.,2. Low (0-999),Personal Loan Only,unknown,60,4,6.67
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Debt Free,failure,10,5,50.0
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Debt Free,unknown,110,16,14.55
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Dual Debt Burden,unknown,24,1,4.17
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Housing Loan Only,failure,31,2,6.45
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Housing Loan Only,other,11,3,27.27
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Housing Loan Only,unknown,118,7,5.93
+3. Mid Career (41-50),admin.,3. Medium (1K-5K),Personal Loan Only,unknown,17,1,5.88
+3. Mid Career (41-50),admin.,4. High (5K-20K),Debt Free,unknown,24,4,16.67
+3. Mid Career (41-50),admin.,4. High (5K-20K),Housing Loan Only,unknown,20,1,5.0
+3. Mid Career (41-50),blue-collar,1. Negative (<0),Debt Free,unknown,88,5,5.68
+3. Mid Career (41-50),blue-collar,1. Negative (<0),Dual Debt Burden,failure,11,0,0.0
+3. Mid Career (41-50),blue-collar,1. Negative (<0),Dual Debt Burden,unknown,53,2,3.77
+3. Mid Career (41-50),blue-collar,1. Negative (<0),Housing Loan Only,failure,34,3,8.82
+3. Mid Career (41-50),blue-collar,1. Negative (<0),Housing Loan Only,unknown,223,5,2.24
+3. Mid Career (41-50),blue-collar,1. Negative (<0),Personal Loan Only,unknown,44,4,9.09
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Debt Free,unknown,307,16,5.21
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Dual Debt Burden,failure,19,1,5.26
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Dual Debt Burden,unknown,124,5,4.03
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Housing Loan Only,failure,126,7,5.56
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Housing Loan Only,other,45,1,2.22
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Housing Loan Only,success,12,8,66.67
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Housing Loan Only,unknown,736,37,5.03
+3. Mid Career (41-50),blue-collar,2. Low (0-999),Personal Loan Only,unknown,95,9,9.47
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Debt Free,unknown,179,10,5.59
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Dual Debt Burden,failure,15,1,6.67
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Dual Debt Burden,unknown,48,2,4.17
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Housing Loan Only,failure,53,4,7.55
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Housing Loan Only,other,25,3,12.0
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Housing Loan Only,success,14,8,57.14
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Housing Loan Only,unknown,351,30,8.55
+3. Mid Career (41-50),blue-collar,3. Medium (1K-5K),Personal Loan Only,unknown,29,0,0.0
+3. Mid Career (41-50),blue-collar,4. High (5K-20K),Debt Free,unknown,35,4,11.43
+3. Mid Career (41-50),blue-collar,4. High (5K-20K),Housing Loan Only,failure,10,1,10.0
+3. Mid Career (41-50),blue-collar,4. High (5K-20K),Housing Loan Only,unknown,57,6,10.53
+3. Mid Career (41-50),entrepreneur,1. Negative (<0),Debt Free,unknown,22,4,18.18
+3. Mid Career (41-50),entrepreneur,1. Negative (<0),Housing Loan Only,unknown,36,3,8.33
+3. Mid Career (41-50),entrepreneur,1. Negative (<0),Personal Loan Only,unknown,10,2,20.0
+3. Mid Career (41-50),entrepreneur,2. Low (0-999),Debt Free,unknown,71,8,11.27
+3. Mid Career (41-50),entrepreneur,2. Low (0-999),Dual Debt Burden,unknown,24,0,0.0
+3. Mid Career (41-50),entrepreneur,2. Low (0-999),Housing Loan Only,failure,16,0,0.0
+3. Mid Career (41-50),entrepreneur,2. Low (0-999),Housing Loan Only,unknown,79,7,8.86
+3. Mid Career (41-50),entrepreneur,2. Low (0-999),Personal Loan Only,unknown,20,0,0.0
+3. Mid Career (41-50),entrepreneur,3. Medium (1K-5K),Debt Free,unknown,32,1,3.12
+3. Mid Career (41-50),entrepreneur,3. Medium (1K-5K),Dual Debt Burden,unknown,15,1,6.67
+3. Mid Career (41-50),entrepreneur,3. Medium (1K-5K),Housing Loan Only,failure,13,1,7.69
+3. Mid Career (41-50),entrepreneur,3. Medium (1K-5K),Housing Loan Only,unknown,42,0,0.0
+3. Mid Career (41-50),entrepreneur,4. High (5K-20K),Debt Free,unknown,11,3,27.27
+3. Mid Career (41-50),entrepreneur,4. High (5K-20K),Housing Loan Only,unknown,10,1,10.0
+3. Mid Career (41-50),housemaid,1. Negative (<0),Debt Free,unknown,25,2,8.0
+3. Mid Career (41-50),housemaid,1. Negative (<0),Housing Loan Only,unknown,13,0,0.0
+3. Mid Career (41-50),housemaid,2. Low (0-999),Debt Free,unknown,105,5,4.76
+3. Mid Career (41-50),housemaid,2. Low (0-999),Dual Debt Burden,unknown,10,0,0.0
+3. Mid Career (41-50),housemaid,2. Low (0-999),Housing Loan Only,unknown,44,2,4.55
+3. Mid Career (41-50),housemaid,2. Low (0-999),Personal Loan Only,unknown,18,1,5.56
+3. Mid Career (41-50),housemaid,3. Medium (1K-5K),Debt Free,unknown,59,4,6.78
+3. Mid Career (41-50),housemaid,3. Medium (1K-5K),Housing Loan Only,unknown,17,2,11.76
+3. Mid Career (41-50),housemaid,4. High (5K-20K),Debt Free,unknown,12,2,16.67
+3. Mid Career (41-50),management,1. Negative (<0),Debt Free,unknown,163,8,4.91
+3. Mid Career (41-50),management,1. Negative (<0),Dual Debt Burden,unknown,40,1,2.5
+3. Mid Career (41-50),management,1. Negative (<0),Housing Loan Only,failure,24,1,4.17
+3. Mid Career (41-50),management,1. Negative (<0),Housing Loan Only,unknown,119,5,4.2
+3. Mid Career (41-50),management,1. Negative (<0),Personal Loan Only,unknown,38,1,2.63
+3. Mid Career (41-50),management,2. Low (0-999),Debt Free,failure,27,4,14.81
+3. Mid Career (41-50),management,2. Low (0-999),Debt Free,other,12,4,33.33
+3. Mid Career (41-50),management,2. Low (0-999),Debt Free,success,21,15,71.43
+3. Mid Career (41-50),management,2. Low (0-999),Debt Free,unknown,389,50,12.85
+3. Mid Career (41-50),management,2. Low (0-999),Dual Debt Burden,unknown,58,2,3.45
+3. Mid Career (41-50),management,2. Low (0-999),Housing Loan Only,failure,65,6,9.23
+3. Mid Career (41-50),management,2. Low (0-999),Housing Loan Only,other,25,3,12.0
+3. Mid Career (41-50),management,2. Low (0-999),Housing Loan Only,success,13,9,69.23
+3. Mid Career (41-50),management,2. Low (0-999),Housing Loan Only,unknown,358,15,4.19
+3. Mid Career (41-50),management,2. Low (0-999),Personal Loan Only,unknown,77,3,3.9
+3. Mid Career (41-50),management,3. Medium (1K-5K),Debt Free,failure,24,8,33.33
+3. Mid Career (41-50),management,3. Medium (1K-5K),Debt Free,other,13,5,38.46
+3. Mid Career (41-50),management,3. Medium (1K-5K),Debt Free,success,21,16,76.19
+3. Mid Career (41-50),management,3. Medium (1K-5K),Debt Free,unknown,268,42,15.67
+3. Mid Career (41-50),management,3. Medium (1K-5K),Dual Debt Burden,unknown,41,5,12.2
+3. Mid Career (41-50),management,3. Medium (1K-5K),Housing Loan Only,failure,29,4,13.79
+3. Mid Career (41-50),management,3. Medium (1K-5K),Housing Loan Only,other,12,1,8.33
+3. Mid Career (41-50),management,3. Medium (1K-5K),Housing Loan Only,unknown,224,15,6.7
+3. Mid Career (41-50),management,3. Medium (1K-5K),Personal Loan Only,unknown,26,2,7.69
+3. Mid Career (41-50),management,4. High (5K-20K),Debt Free,failure,16,6,37.5
+3. Mid Career (41-50),management,4. High (5K-20K),Debt Free,unknown,84,10,11.9
+3. Mid Career (41-50),management,4. High (5K-20K),Housing Loan Only,failure,10,2,20.0
+3. Mid Career (41-50),management,4. High (5K-20K),Housing Loan Only,unknown,65,4,6.15
+3. Mid Career (41-50),management,5. Very High (20K+),Debt Free,unknown,10,2,20.0
+3. Mid Career (41-50),retired,2. Low (0-999),Debt Free,unknown,25,1,4.0
+3. Mid Career (41-50),retired,2. Low (0-999),Housing Loan Only,unknown,10,0,0.0
+3. Mid Career (41-50),retired,2. Low (0-999),Personal Loan Only,unknown,12,0,0.0
+3. Mid Career (41-50),retired,3. Medium (1K-5K),Debt Free,unknown,19,1,5.26
+3. Mid Career (41-50),self-employed,1. Negative (<0),Debt Free,unknown,31,1,3.23
+3. Mid Career (41-50),self-employed,1. Negative (<0),Dual Debt Burden,unknown,12,0,0.0
+3. Mid Career (41-50),self-employed,1. Negative (<0),Housing Loan Only,unknown,16,1,6.25
+3. Mid Career (41-50),self-employed,2. Low (0-999),Debt Free,unknown,76,7,9.21
+3. Mid Career (41-50),self-employed,2. Low (0-999),Housing Loan Only,failure,12,0,0.0
+3. Mid Career (41-50),self-employed,2. Low (0-999),Housing Loan Only,unknown,66,3,4.55
+3. Mid Career (41-50),self-employed,3. Medium (1K-5K),Debt Free,unknown,52,4,7.69
+3. Mid Career (41-50),self-employed,3. Medium (1K-5K),Housing Loan Only,unknown,30,1,3.33
+3. Mid Career (41-50),self-employed,4. High (5K-20K),Debt Free,unknown,18,1,5.56
+3. Mid Career (41-50),services,1. Negative (<0),Debt Free,unknown,43,2,4.65
+3. Mid Career (41-50),services,1. Negative (<0),Dual Debt Burden,unknown,29,2,6.9
+3. Mid Career (41-50),services,1. Negative (<0),Housing Loan Only,failure,11,1,9.09
+3. Mid Career (41-50),services,1. Negative (<0),Housing Loan Only,unknown,69,4,5.8
+3. Mid Career (41-50),services,1. Negative (<0),Personal Loan Only,unknown,21,1,4.76
+3. Mid Career (41-50),services,2. Low (0-999),Debt Free,unknown,157,9,5.73
+3. Mid Career (41-50),services,2. Low (0-999),Dual Debt Burden,failure,11,2,18.18
+3. Mid Career (41-50),services,2. Low (0-999),Dual Debt Burden,unknown,63,1,1.59
+3. Mid Career (41-50),services,2. Low (0-999),Housing Loan Only,failure,32,3,9.38
+3. Mid Career (41-50),services,2. Low (0-999),Housing Loan Only,unknown,208,4,1.92
+3. Mid Career (41-50),services,2. Low (0-999),Personal Loan Only,unknown,35,2,5.71
+3. Mid Career (41-50),services,3. Medium (1K-5K),Debt Free,unknown,67,10,14.93
+3. Mid Career (41-50),services,3. Medium (1K-5K),Dual Debt Burden,unknown,18,1,5.56
+3. Mid Career (41-50),services,3. Medium (1K-5K),Housing Loan Only,failure,30,2,6.67
+3. Mid Career (41-50),services,3. Medium (1K-5K),Housing Loan Only,unknown,114,8,7.02
+3. Mid Career (41-50),services,3. Medium (1K-5K),Personal Loan Only,unknown,11,0,0.0
+3. Mid Career (41-50),services,4. High (5K-20K),Debt Free,unknown,10,0,0.0
+3. Mid Career (41-50),services,4. High (5K-20K),Housing Loan Only,unknown,22,0,0.0
+3. Mid Career (41-50),technician,1. Negative (<0),Debt Free,unknown,102,5,4.9
+3. Mid Career (41-50),technician,1. Negative (<0),Dual Debt Burden,failure,11,2,18.18
+3. Mid Career (41-50),technician,1. Negative (<0),Dual Debt Burden,unknown,70,3,4.29
+3. Mid Career (41-50),technician,1. Negative (<0),Housing Loan Only,failure,17,0,0.0
+3. Mid Career (41-50),technician,1. Negative (<0),Housing Loan Only,unknown,102,4,3.92
+3. Mid Career (41-50),technician,1. Negative (<0),Personal Loan Only,unknown,34,2,5.88
+3. Mid Career (41-50),technician,2. Low (0-999),Debt Free,failure,18,2,11.11
+3. Mid Career (41-50),technician,2. Low (0-999),Debt Free,success,10,6,60.0
+3. Mid Career (41-50),technician,2. Low (0-999),Debt Free,unknown,354,26,7.34
+3. Mid Career (41-50),technician,2. Low (0-999),Dual Debt Burden,failure,10,0,0.0
+3. Mid Career (41-50),technician,2. Low (0-999),Dual Debt Burden,unknown,63,1,1.59
+3. Mid Career (41-50),technician,2. Low (0-999),Housing Loan Only,failure,53,2,3.77
+3. Mid Career (41-50),technician,2. Low (0-999),Housing Loan Only,other,17,0,0.0
+3. Mid Career (41-50),technician,2. Low (0-999),Housing Loan Only,unknown,314,16,5.1
+3. Mid Career (41-50),technician,2. Low (0-999),Personal Loan Only,unknown,55,2,3.64
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Debt Free,failure,15,3,20.0
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Debt Free,success,12,6,50.0
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Debt Free,unknown,172,29,16.86
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Dual Debt Burden,unknown,35,0,0.0
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Housing Loan Only,failure,23,2,8.7
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Housing Loan Only,success,14,6,42.86
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Housing Loan Only,unknown,178,17,9.55
+3. Mid Career (41-50),technician,3. Medium (1K-5K),Personal Loan Only,unknown,22,4,18.18
+3. Mid Career (41-50),technician,4. High (5K-20K),Debt Free,unknown,46,5,10.87
+3. Mid Career (41-50),technician,4. High (5K-20K),Housing Loan Only,unknown,34,3,8.82
+3. Mid Career (41-50),unemployed,1. Negative (<0),Debt Free,unknown,18,2,11.11
+3. Mid Career (41-50),unemployed,1. Negative (<0),Housing Loan Only,unknown,25,0,0.0
+3. Mid Career (41-50),unemployed,2. Low (0-999),Debt Free,success,10,9,90.0
+3. Mid Career (41-50),unemployed,2. Low (0-999),Debt Free,unknown,68,13,19.12
+3. Mid Career (41-50),unemployed,2. Low (0-999),Housing Loan Only,unknown,60,3,5.0
+3. Mid Career (41-50),unemployed,3. Medium (1K-5K),Debt Free,unknown,40,6,15.0
+3. Mid Career (41-50),unemployed,3. Medium (1K-5K),Housing Loan Only,unknown,32,3,9.38
+3. Mid Career (41-50),unemployed,4. High (5K-20K),Debt Free,unknown,15,0,0.0
+3. Mid Career (41-50),unknown,1. Negative (<0),Debt Free,unknown,10,1,10.0
+3. Mid Career (41-50),unknown,2. Low (0-999),Debt Free,unknown,37,2,5.41
+3. Mid Career (41-50),unknown,3. Medium (1K-5K),Debt Free,unknown,32,0,0.0
+4. Pre-Retirement (51-60),admin.,1. Negative (<0),Debt Free,unknown,34,1,2.94
+4. Pre-Retirement (51-60),admin.,1. Negative (<0),Dual Debt Burden,unknown,17,2,11.76
+4. Pre-Retirement (51-60),admin.,1. Negative (<0),Housing Loan Only,unknown,26,1,3.85
+4. Pre-Retirement (51-60),admin.,1. Negative (<0),Personal Loan Only,unknown,11,0,0.0
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Debt Free,failure,11,3,27.27
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Debt Free,success,12,9,75.0
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Debt Free,unknown,117,17,14.53
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Dual Debt Burden,unknown,30,0,0.0
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Housing Loan Only,failure,21,1,4.76
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Housing Loan Only,unknown,97,5,5.15
+4. Pre-Retirement (51-60),admin.,2. Low (0-999),Personal Loan Only,unknown,33,0,0.0
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Debt Free,failure,13,5,38.46
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Debt Free,success,10,6,60.0
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Debt Free,unknown,95,17,17.89
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Dual Debt Burden,unknown,13,3,23.08
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Housing Loan Only,failure,14,2,14.29
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Housing Loan Only,unknown,74,6,8.11
+4. Pre-Retirement (51-60),admin.,3. Medium (1K-5K),Personal Loan Only,unknown,14,0,0.0
+4. Pre-Retirement (51-60),admin.,4. High (5K-20K),Debt Free,unknown,23,4,17.39
+4. Pre-Retirement (51-60),admin.,4. High (5K-20K),Housing Loan Only,unknown,10,1,10.0
+4. Pre-Retirement (51-60),blue-collar,1. Negative (<0),Debt Free,unknown,79,4,5.06
+4. Pre-Retirement (51-60),blue-collar,1. Negative (<0),Dual Debt Burden,unknown,21,2,9.52
+4. Pre-Retirement (51-60),blue-collar,1. Negative (<0),Housing Loan Only,unknown,79,5,6.33
+4. Pre-Retirement (51-60),blue-collar,1. Negative (<0),Personal Loan Only,unknown,28,0,0.0
+4. Pre-Retirement (51-60),blue-collar,2. Low (0-999),Debt Free,unknown,216,15,6.94
+4. Pre-Retirement (51-60),blue-collar,2. Low (0-999),Dual Debt Burden,unknown,47,1,2.13
+4. Pre-Retirement (51-60),blue-collar,2. Low (0-999),Housing Loan Only,failure,51,0,0.0
+4. Pre-Retirement (51-60),blue-collar,2. Low (0-999),Housing Loan Only,other,10,0,0.0
+4. Pre-Retirement (51-60),blue-collar,2. Low (0-999),Housing Loan Only,unknown,281,11,3.91
+4. Pre-Retirement (51-60),blue-collar,2. Low (0-999),Personal Loan Only,unknown,62,3,4.84
+4. Pre-Retirement (51-60),blue-collar,3. Medium (1K-5K),Debt Free,failure,10,1,10.0
+4. Pre-Retirement (51-60),blue-collar,3. Medium (1K-5K),Debt Free,unknown,171,14,8.19
+4. Pre-Retirement (51-60),blue-collar,3. Medium (1K-5K),Dual Debt Burden,unknown,16,1,6.25
+4. Pre-Retirement (51-60),blue-collar,3. Medium (1K-5K),Housing Loan Only,failure,28,3,10.71
+4. Pre-Retirement (51-60),blue-collar,3. Medium (1K-5K),Housing Loan Only,unknown,154,7,4.55
+4. Pre-Retirement (51-60),blue-collar,3. Medium (1K-5K),Personal Loan Only,unknown,26,2,7.69
+4. Pre-Retirement (51-60),blue-collar,4. High (5K-20K),Debt Free,unknown,40,6,15.0
+4. Pre-Retirement (51-60),blue-collar,4. High (5K-20K),Housing Loan Only,unknown,43,2,4.65
+4. Pre-Retirement (51-60),entrepreneur,1. Negative (<0),Debt Free,unknown,21,1,4.76
+4. Pre-Retirement (51-60),entrepreneur,1. Negative (<0),Housing Loan Only,unknown,11,0,0.0
+4. Pre-Retirement (51-60),entrepreneur,1. Negative (<0),Personal Loan Only,unknown,14,1,7.14
+4. Pre-Retirement (51-60),entrepreneur,2. Low (0-999),Debt Free,unknown,52,4,7.69
+4. Pre-Retirement (51-60),entrepreneur,2. Low (0-999),Dual Debt Burden,unknown,14,0,0.0
+4. Pre-Retirement (51-60),entrepreneur,2. Low (0-999),Housing Loan Only,unknown,45,6,13.33
+4. Pre-Retirement (51-60),entrepreneur,2. Low (0-999),Personal Loan Only,unknown,12,0,0.0
+4. Pre-Retirement (51-60),entrepreneur,3. Medium (1K-5K),Debt Free,unknown,30,4,13.33
+4. Pre-Retirement (51-60),entrepreneur,3. Medium (1K-5K),Housing Loan Only,unknown,16,1,6.25
+4. Pre-Retirement (51-60),entrepreneur,4. High (5K-20K),Debt Free,unknown,10,0,0.0
+4. Pre-Retirement (51-60),housemaid,1. Negative (<0),Debt Free,unknown,35,2,5.71
+4. Pre-Retirement (51-60),housemaid,2. Low (0-999),Debt Free,failure,10,0,0.0
+4. Pre-Retirement (51-60),housemaid,2. Low (0-999),Debt Free,unknown,125,3,2.4
+4. Pre-Retirement (51-60),housemaid,2. Low (0-999),Housing Loan Only,unknown,34,2,5.88
+4. Pre-Retirement (51-60),housemaid,2. Low (0-999),Personal Loan Only,unknown,22,2,9.09
+4. Pre-Retirement (51-60),housemaid,3. Medium (1K-5K),Debt Free,unknown,94,10,10.64
+4. Pre-Retirement (51-60),housemaid,3. Medium (1K-5K),Housing Loan Only,unknown,11,2,18.18
+4. Pre-Retirement (51-60),housemaid,4. High (5K-20K),Debt Free,unknown,19,2,10.53
+4. Pre-Retirement (51-60),management,1. Negative (<0),Debt Free,unknown,113,10,8.85
+4. Pre-Retirement (51-60),management,1. Negative (<0),Dual Debt Burden,unknown,27,2,7.41
+4. Pre-Retirement (51-60),management,1. Negative (<0),Housing Loan Only,failure,11,0,0.0
+4. Pre-Retirement (51-60),management,1. Negative (<0),Housing Loan Only,unknown,68,2,2.94
+4. Pre-Retirement (51-60),management,1. Negative (<0),Personal Loan Only,unknown,20,1,5.0
+4. Pre-Retirement (51-60),management,2. Low (0-999),Debt Free,failure,24,8,33.33
+4. Pre-Retirement (51-60),management,2. Low (0-999),Debt Free,success,16,14,87.5
+4. Pre-Retirement (51-60),management,2. Low (0-999),Debt Free,unknown,256,22,8.59
+4. Pre-Retirement (51-60),management,2. Low (0-999),Dual Debt Burden,failure,14,0,0.0
+4. Pre-Retirement (51-60),management,2. Low (0-999),Dual Debt Burden,unknown,30,1,3.33
+4. Pre-Retirement (51-60),management,2. Low (0-999),Housing Loan Only,failure,28,2,7.14
+4. Pre-Retirement (51-60),management,2. Low (0-999),Housing Loan Only,unknown,164,6,3.66
+4. Pre-Retirement (51-60),management,2. Low (0-999),Personal Loan Only,unknown,70,3,4.29
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Debt Free,failure,34,11,32.35
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Debt Free,success,22,15,68.18
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Debt Free,unknown,209,27,12.92
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Dual Debt Burden,unknown,19,1,5.26
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Housing Loan Only,failure,24,0,0.0
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Housing Loan Only,unknown,146,15,10.27
+4. Pre-Retirement (51-60),management,3. Medium (1K-5K),Personal Loan Only,unknown,28,2,7.14
+4. Pre-Retirement (51-60),management,4. High (5K-20K),Debt Free,unknown,86,14,16.28
+4. Pre-Retirement (51-60),management,4. High (5K-20K),Housing Loan Only,unknown,40,4,10.0
+4. Pre-Retirement (51-60),management,5. Very High (20K+),Debt Free,unknown,15,0,0.0
+4. Pre-Retirement (51-60),retired,1. Negative (<0),Debt Free,unknown,83,6,7.23
+4. Pre-Retirement (51-60),retired,1. Negative (<0),Dual Debt Burden,unknown,15,2,13.33
+4. Pre-Retirement (51-60),retired,1. Negative (<0),Housing Loan Only,unknown,51,4,7.84
+4. Pre-Retirement (51-60),retired,1. Negative (<0),Personal Loan Only,unknown,37,1,2.7
+4. Pre-Retirement (51-60),retired,2. Low (0-999),Debt Free,failure,16,5,31.25
+4. Pre-Retirement (51-60),retired,2. Low (0-999),Debt Free,unknown,255,23,9.02
+4. Pre-Retirement (51-60),retired,2. Low (0-999),Dual Debt Burden,unknown,31,0,0.0
+4. Pre-Retirement (51-60),retired,2. Low (0-999),Housing Loan Only,failure,18,2,11.11
+4. Pre-Retirement (51-60),retired,2. Low (0-999),Housing Loan Only,unknown,140,5,3.57
+4. Pre-Retirement (51-60),retired,2. Low (0-999),Personal Loan Only,unknown,81,3,3.7
+4. Pre-Retirement (51-60),retired,3. Medium (1K-5K),Debt Free,failure,22,4,18.18
+4. Pre-Retirement (51-60),retired,3. Medium (1K-5K),Debt Free,success,10,7,70.0
+4. Pre-Retirement (51-60),retired,3. Medium (1K-5K),Debt Free,unknown,182,29,15.93
+4. Pre-Retirement (51-60),retired,3. Medium (1K-5K),Dual Debt Burden,unknown,24,4,16.67
+4. Pre-Retirement (51-60),retired,3. Medium (1K-5K),Housing Loan Only,unknown,68,5,7.35
+4. Pre-Retirement (51-60),retired,3. Medium (1K-5K),Personal Loan Only,unknown,38,1,2.63
+4. Pre-Retirement (51-60),retired,4. High (5K-20K),Debt Free,unknown,56,8,14.29
+4. Pre-Retirement (51-60),retired,4. High (5K-20K),Housing Loan Only,unknown,15,2,13.33
+4. Pre-Retirement (51-60),self-employed,1. Negative (<0),Debt Free,unknown,12,1,8.33
+4. Pre-Retirement (51-60),self-employed,1. Negative (<0),Housing Loan Only,unknown,15,0,0.0
+4. Pre-Retirement (51-60),self-employed,2. Low (0-999),Debt Free,unknown,51,1,1.96
+4. Pre-Retirement (51-60),self-employed,2. Low (0-999),Housing Loan Only,unknown,37,2,5.41
+4. Pre-Retirement (51-60),self-employed,2. Low (0-999),Personal Loan Only,unknown,20,2,10.0
+4. Pre-Retirement (51-60),self-employed,3. Medium (1K-5K),Debt Free,unknown,37,3,8.11
+4. Pre-Retirement (51-60),self-employed,3. Medium (1K-5K),Housing Loan Only,unknown,23,0,0.0
+4. Pre-Retirement (51-60),self-employed,4. High (5K-20K),Debt Free,unknown,13,2,15.38
+4. Pre-Retirement (51-60),services,1. Negative (<0),Debt Free,unknown,32,3,9.38
+4. Pre-Retirement (51-60),services,1. Negative (<0),Housing Loan Only,unknown,20,1,5.0
+4. Pre-Retirement (51-60),services,1. Negative (<0),Personal Loan Only,unknown,15,0,0.0
+4. Pre-Retirement (51-60),services,2. Low (0-999),Debt Free,unknown,102,7,6.86
+4. Pre-Retirement (51-60),services,2. Low (0-999),Dual Debt Burden,unknown,24,1,4.17
+4. Pre-Retirement (51-60),services,2. Low (0-999),Housing Loan Only,failure,15,1,6.67
+4. Pre-Retirement (51-60),services,2. Low (0-999),Housing Loan Only,unknown,89,3,3.37
+4. Pre-Retirement (51-60),services,2. Low (0-999),Personal Loan Only,unknown,28,4,14.29
+4. Pre-Retirement (51-60),services,3. Medium (1K-5K),Debt Free,unknown,47,2,4.26
+4. Pre-Retirement (51-60),services,3. Medium (1K-5K),Housing Loan Only,failure,13,0,0.0
+4. Pre-Retirement (51-60),services,3. Medium (1K-5K),Housing Loan Only,unknown,60,3,5.0
+4. Pre-Retirement (51-60),services,4. High (5K-20K),Debt Free,unknown,12,1,8.33
+4. Pre-Retirement (51-60),services,4. High (5K-20K),Housing Loan Only,unknown,14,0,0.0
+4. Pre-Retirement (51-60),technician,1. Negative (<0),Debt Free,unknown,77,7,9.09
+4. Pre-Retirement (51-60),technician,1. Negative (<0),Dual Debt Burden,unknown,17,2,11.76
+4. Pre-Retirement (51-60),technician,1. Negative (<0),Housing Loan Only,unknown,47,3,6.38
+4. Pre-Retirement (51-60),technician,1. Negative (<0),Personal Loan Only,unknown,16,1,6.25
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Debt Free,failure,15,4,26.67
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Debt Free,unknown,204,27,13.24
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Dual Debt Burden,unknown,38,4,10.53
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Housing Loan Only,failure,35,2,5.71
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Housing Loan Only,other,11,1,9.09
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Housing Loan Only,unknown,148,6,4.05
+4. Pre-Retirement (51-60),technician,2. Low (0-999),Personal Loan Only,unknown,48,3,6.25
+4. Pre-Retirement (51-60),technician,3. Medium (1K-5K),Debt Free,unknown,103,7,6.8
+4. Pre-Retirement (51-60),technician,3. Medium (1K-5K),Dual Debt Burden,unknown,21,1,4.76
+4. Pre-Retirement (51-60),technician,3. Medium (1K-5K),Housing Loan Only,failure,13,2,15.38
+4. Pre-Retirement (51-60),technician,3. Medium (1K-5K),Housing Loan Only,unknown,87,4,4.6
+4. Pre-Retirement (51-60),technician,3. Medium (1K-5K),Personal Loan Only,unknown,21,2,9.52
+4. Pre-Retirement (51-60),technician,4. High (5K-20K),Debt Free,unknown,27,8,29.63
+4. Pre-Retirement (51-60),technician,4. High (5K-20K),Housing Loan Only,unknown,31,2,6.45
+4. Pre-Retirement (51-60),unemployed,1. Negative (<0),Debt Free,unknown,16,2,12.5
+4. Pre-Retirement (51-60),unemployed,2. Low (0-999),Debt Free,unknown,68,9,13.24
+4. Pre-Retirement (51-60),unemployed,2. Low (0-999),Housing Loan Only,unknown,29,3,10.34
+4. Pre-Retirement (51-60),unemployed,3. Medium (1K-5K),Debt Free,unknown,54,9,16.67
+4. Pre-Retirement (51-60),unemployed,3. Medium (1K-5K),Housing Loan Only,unknown,16,1,6.25
+4. Pre-Retirement (51-60),unemployed,4. High (5K-20K),Debt Free,unknown,16,1,6.25
+4. Pre-Retirement (51-60),unknown,2. Low (0-999),Debt Free,unknown,36,3,8.33
+4. Pre-Retirement (51-60),unknown,3. Medium (1K-5K),Debt Free,unknown,28,1,3.57
+5. Retired (61+),housemaid,2. Low (0-999),Debt Free,unknown,16,5,31.25
+5. Retired (61+),housemaid,3. Medium (1K-5K),Debt Free,unknown,15,7,46.67
+5. Retired (61+),management,2. Low (0-999),Debt Free,unknown,16,9,56.25
+5. Retired (61+),management,3. Medium (1K-5K),Debt Free,unknown,21,8,38.1
+5. Retired (61+),management,4. High (5K-20K),Debt Free,unknown,18,3,16.67
+5. Retired (61+),retired,1. Negative (<0),Debt Free,unknown,43,11,25.58
+5. Retired (61+),retired,2. Low (0-999),Debt Free,failure,32,10,31.25
+5. Retired (61+),retired,2. Low (0-999),Debt Free,other,17,6,35.29
+5. Retired (61+),retired,2. Low (0-999),Debt Free,success,46,37,80.43
+5. Retired (61+),retired,2. Low (0-999),Debt Free,unknown,203,79,38.92
+5. Retired (61+),retired,3. Medium (1K-5K),Debt Free,failure,69,19,27.54
+5. Retired (61+),retired,3. Medium (1K-5K),Debt Free,other,22,10,45.45
+5. Retired (61+),retired,3. Medium (1K-5K),Debt Free,success,72,45,62.5
+5. Retired (61+),retired,3. Medium (1K-5K),Debt Free,unknown,217,89,41.01
+5. Retired (61+),retired,3. Medium (1K-5K),Housing Loan Only,unknown,11,5,45.45
+5. Retired (61+),retired,4. High (5K-20K),Debt Free,failure,10,3,30.0
+5. Retired (61+),retired,4. High (5K-20K),Debt Free,success,12,9,75.0
+5. Retired (61+),retired,4. High (5K-20K),Debt Free,unknown,46,19,41.3

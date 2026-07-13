@@ -1,0 +1,558 @@
+// =============================================================================
+// DAX MEASURES LIBRARY
+// Project  : Bank Term Deposit Campaign Effectiveness Analytics
+// File     : dax_measures_library.dax
+// Analyst  : Ritik
+// Version  : 1.0
+// =============================================================================
+// HOW TO USE:
+//   1. In Power BI Desktop → Home → Enter Data
+//   2. Name the table "_Measures" → Load
+//   3. Select the _Measures table in the Fields pane
+//   4. Home → New Measure → paste each measure below one at a time
+//   5. Measures are grouped by category for easy navigation
+// =============================================================================
+
+
+// =============================================================================
+// GROUP A — CORE KPI MEASURES
+// These are the headline numbers shown in KPI cards on Page 1.
+// =============================================================================
+
+Total Contacts =
+COUNTROWS( bank_analysis )
+
+// -----------------------------------------------------------------------------
+
+Total Subscriptions =
+SUM( bank_analysis[subscription_flag] )
+
+// -----------------------------------------------------------------------------
+
+Total Non-Subscriptions =
+[Total Contacts] - [Total Subscriptions]
+
+// -----------------------------------------------------------------------------
+
+Conversion Rate % =
+DIVIDE(
+    [Total Subscriptions],
+    [Total Contacts],
+    0
+) * 100
+
+// -----------------------------------------------------------------------------
+
+Non-Conversion Rate % =
+100 - [Conversion Rate %]
+
+// -----------------------------------------------------------------------------
+// Fixed 11.70% benchmark — used as the reference line and lift denominator
+// across all segment visuals. ALL() removes any filter context so this
+// always returns the overall rate, never a filtered segment rate.
+// -----------------------------------------------------------------------------
+Overall Benchmark Rate =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ),
+    ALL( bank_analysis )
+) * 100
+
+
+// =============================================================================
+// GROUP B — COST & ROI MEASURES
+// Financial impact calculations. All use ₹150 cost per call assumption.
+// Documented in Business Problem Statement (Phase 1).
+// =============================================================================
+
+Total Campaign Cost INR =
+[Total Contacts] * 150
+
+// -----------------------------------------------------------------------------
+
+Total Campaign Cost Lakh =
+DIVIDE( [Total Campaign Cost INR], 100000 )
+
+// -----------------------------------------------------------------------------
+// Spend on calls that produced NO subscription — the waste metric.
+// This is the number that motivates the entire targeting recommendation.
+// -----------------------------------------------------------------------------
+Wasted Spend INR =
+[Total Non-Subscriptions] * 150
+
+// -----------------------------------------------------------------------------
+
+Wasted Spend Lakh =
+DIVIDE( [Wasted Spend INR], 100000 )
+
+// -----------------------------------------------------------------------------
+
+Wasted Spend Pct =
+DIVIDE( [Wasted Spend INR], [Total Campaign Cost INR], 0 ) * 100
+
+// -----------------------------------------------------------------------------
+// Cost per acquisition = total spend ÷ subscriptions generated.
+// Current state: ₹1,282. Target (Scenario B): ₹858. Premium (Scenario C): ₹476.
+// NULLIF equivalent: DIVIDE handles division-by-zero by returning 0.
+// -----------------------------------------------------------------------------
+Cost Per Acquisition INR =
+DIVIDE(
+    [Total Campaign Cost INR],
+    [Total Subscriptions],
+    0
+)
+
+// -----------------------------------------------------------------------------
+
+Calls Per Subscription =
+DIVIDE(
+    [Total Contacts],
+    [Total Subscriptions],
+    0
+)
+
+// -----------------------------------------------------------------------------
+// Estimated annual deposit revenue from subscriptions.
+// Assumes: deposit = 20% of avg balance | margin = 1.5% net interest
+// This is illustrative — flagged as estimate in all visuals.
+// -----------------------------------------------------------------------------
+Est Annual Revenue EUR =
+SUMX(
+    FILTER( bank_analysis, bank_analysis[subscription_flag] = 1 ),
+    bank_analysis[balance] * 0.20 * 0.015
+)
+
+
+// =============================================================================
+// GROUP C — SEGMENT INTELLIGENCE MEASURES
+// These respect all slicer/filter context — use them in all segment visuals.
+// They automatically recalculate when the user filters by age band, job, etc.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// The primary measure for all segment bar/column charts.
+// Automatically respects every slicer, filter, and visual-level filter.
+// -----------------------------------------------------------------------------
+Segment Conversion Rate % =
+DIVIDE(
+    SUM( bank_analysis[subscription_flag] ),
+    COUNTROWS( bank_analysis ),
+    0
+) * 100
+
+// -----------------------------------------------------------------------------
+// Lift = how much better/worse is this segment vs the 11.70% overall average.
+// Lift 1.0 = average. Lift 2.0 = converts 2× better than average.
+// Lift 0.6 = converts at 60% of average (below average).
+// NEVER use [Conversion Rate %] as denominator — it would shift with filters.
+// Always use [Overall Benchmark Rate] which is ALL()-scoped.
+// -----------------------------------------------------------------------------
+Segment Lift =
+DIVIDE(
+    [Segment Conversion Rate %],
+    [Overall Benchmark Rate],
+    0
+)
+
+// -----------------------------------------------------------------------------
+
+Segment Lift Label =
+VAR lift = [Segment Lift]
+RETURN
+    IF(
+        lift >= 1,
+        FORMAT( lift, "0.00" ) & "× above avg",
+        FORMAT( lift, "0.00" ) & "× below avg"
+    )
+
+// -----------------------------------------------------------------------------
+// Used as a conditional formatting rule field on all bar charts.
+// If = 1 → apply green (#1D9E75). If = 0 → apply red (#E24B4A).
+// In Power BI: Format visual → Bars → Conditional formatting → Field value
+// -----------------------------------------------------------------------------
+Above Average Flag =
+IF(
+    [Segment Conversion Rate %] >= [Overall Benchmark Rate],
+    1,
+    0
+)
+
+// -----------------------------------------------------------------------------
+// What share of ALL subscriptions does the current filter context represent?
+// Used in the concentration / 80-20 analysis on Page 2.
+// Example: "Retired segment captures 9.8% of all subscriptions"
+// -----------------------------------------------------------------------------
+Segment Sub Share % =
+DIVIDE(
+    SUM( bank_analysis[subscription_flag] ),
+    CALCULATE(
+        SUM( bank_analysis[subscription_flag] ),
+        ALL( bank_analysis )
+    ),
+    0
+) * 100
+
+// -----------------------------------------------------------------------------
+
+Segment Contact Share % =
+DIVIDE(
+    COUNTROWS( bank_analysis ),
+    CALCULATE( COUNTROWS( bank_analysis ), ALL( bank_analysis ) ),
+    0
+) * 100
+
+// -----------------------------------------------------------------------------
+// Efficiency ratio: subscriptions generated per % of database contacted.
+// High efficiency = segment punches above its weight (e.g., retired customers).
+// Low efficiency  = segment over-represented in calls vs subscriptions produced.
+// Formula: (Segment Sub Share) / (Segment Contact Share)
+// Retired example: 9.8% of subs from 2.6% of contacts = efficiency ratio 3.77
+// -----------------------------------------------------------------------------
+Segment Efficiency Ratio =
+DIVIDE(
+    [Segment Sub Share %],
+    [Segment Contact Share %],
+    0
+)
+
+
+// =============================================================================
+// GROUP D — CAMPAIGN DIAGNOSTICS
+// Measures that analyse HOW the campaign was executed, not just WHO was called.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Average call duration excluding zero-duration (no-connection) calls.
+// Respects filter context — shows avg duration for the current segment.
+// -----------------------------------------------------------------------------
+Avg Call Duration Seconds =
+AVERAGEX(
+    FILTER( bank_analysis, bank_analysis[duration] > 0 ),
+    bank_analysis[duration]
+)
+
+// -----------------------------------------------------------------------------
+
+Avg Duration Subscribers =
+CALCULATE(
+    AVERAGEX(
+        FILTER( bank_analysis, bank_analysis[duration] > 0 ),
+        bank_analysis[duration]
+    ),
+    bank_analysis[y] = "yes"
+)
+
+// -----------------------------------------------------------------------------
+
+Avg Duration Non-Subscribers =
+CALCULATE(
+    AVERAGEX(
+        FILTER( bank_analysis, bank_analysis[duration] > 0 ),
+        bank_analysis[duration]
+    ),
+    bank_analysis[y] = "no"
+)
+
+// -----------------------------------------------------------------------------
+// The 2.4× engagement gap — subscribers speak more than twice as long.
+// ⚠ Post-call diagnostic only. Never use for targeting decisions.
+// -----------------------------------------------------------------------------
+Duration Engagement Ratio =
+DIVIDE(
+    [Avg Duration Subscribers],
+    [Avg Duration Non-Subscribers],
+    0
+)
+
+// -----------------------------------------------------------------------------
+// Conversion rate for customers contacted 4 or more times — the fatigue metric.
+// Compared to the 14.6% first-call rate, this shows how badly conversion decays.
+// -----------------------------------------------------------------------------
+Campaign Fatigue Rate % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[campaign] >= 4
+)
+
+// -----------------------------------------------------------------------------
+
+Excess Contacts =
+CALCULATE(
+    COUNTROWS( bank_analysis ),
+    bank_analysis[campaign] >= 4
+)
+
+// -----------------------------------------------------------------------------
+
+Excess Spend Lakh =
+DIVIDE( [Excess Contacts] * 150, 100000 )
+
+// -----------------------------------------------------------------------------
+// How many subscriptions would be LOST if we implemented the 3-call cap?
+// Answers the "cost of the recommendation" question in interviews.
+// -----------------------------------------------------------------------------
+Subscriptions Lost at 3 Call Cap =
+CALCULATE(
+    SUM( bank_analysis[subscription_flag] ),
+    bank_analysis[campaign] >= 4
+)
+
+// -----------------------------------------------------------------------------
+// Spend that would be SAVED by implementing the 3-call cap.
+// Paired with [Subscriptions Lost at 3 Call Cap] for the trade-off view.
+// -----------------------------------------------------------------------------
+Spend Saved by 3 Call Cap Lakh =
+DIVIDE(
+    CALCULATE( COUNTROWS(bank_analysis), bank_analysis[campaign] >= 4 ) * 150,
+    100000
+)
+
+
+// =============================================================================
+// GROUP E — WARM LEAD MEASURES
+// Quantify the value of prior campaign history (poutcome dimension).
+// The 7× multiplier is the single most important headline in the project.
+// =============================================================================
+
+Warm Lead Count =
+CALCULATE(
+    COUNTROWS( bank_analysis ),
+    bank_analysis[poutcome] = "success"
+)
+
+// -----------------------------------------------------------------------------
+
+Warm Lead Conversion Rate % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[poutcome] = "success"
+)
+
+// -----------------------------------------------------------------------------
+
+Cold Lead Conversion Rate % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[poutcome] = "unknown"
+)
+
+// -----------------------------------------------------------------------------
+// The headline warm lead multiplier: 64.73% ÷ 9.16% = 7.07×
+// This is the most memorable number in the entire project.
+// Displayed as "7.07×" on the Campaign Optimiser page.
+// -----------------------------------------------------------------------------
+Warm Lead Multiplier =
+DIVIDE(
+    [Warm Lead Conversion Rate %],
+    [Cold Lead Conversion Rate %],
+    0
+)
+
+// -----------------------------------------------------------------------------
+
+Failed Lead Conversion Rate % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[poutcome] = "failure"
+)
+
+// -----------------------------------------------------------------------------
+// Even failed leads outperform cold leads — worth re-contacting.
+// Lift vs cold: 12.6% ÷ 9.2% = 1.38×
+// -----------------------------------------------------------------------------
+Failed Lead Lift vs Cold =
+DIVIDE(
+    [Failed Lead Conversion Rate %],
+    [Cold Lead Conversion Rate %],
+    0
+)
+
+
+// =============================================================================
+// GROUP F — CUSTOMER PERSONA MEASURES
+// Named segments defined in SQL Script 08. Fixed filter definitions.
+// Used as KPI cards on Page 2 — do not apply additional slicer filters to these.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Persona A: Loyal Retiree
+// Definition: Previously subscribed (poutcome=success) AND aged 61+
+// Expected rate: ~75%+ (highest converting persona)
+// -----------------------------------------------------------------------------
+Persona A Conversion % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[poutcome] = "success",
+    bank_analysis[age] >= 61
+)
+
+// -----------------------------------------------------------------------------
+// Persona B: Affluent Professional
+// Definition: High balance (>5K EUR) + management/admin job + debt free
+// Expected rate: ~19–22%
+// -----------------------------------------------------------------------------
+Persona B Conversion % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[balance] > 5000,
+    bank_analysis[job] IN { "management", "admin." },
+    bank_analysis[housing] = "no",
+    bank_analysis[loan] = "no"
+)
+
+// -----------------------------------------------------------------------------
+// Persona C: Financial Student
+// Definition: job=student OR (age≤30 AND single)
+// Surprise segment — high conversion despite low balance
+// Expected rate: ~25–29%
+// -----------------------------------------------------------------------------
+Persona C Conversion % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[job] = "student"
+        || ( bank_analysis[age] <= 30 && bank_analysis[marital] = "single" )
+)
+
+// -----------------------------------------------------------------------------
+// Persona D: Over-Leveraged (Deprioritise)
+// Definition: Dual debt burden AND negative account balance
+// Expected rate: ~3–4% (lowest of any defined segment)
+// -----------------------------------------------------------------------------
+Persona D Conversion % =
+CALCULATE(
+    DIVIDE(
+        SUM( bank_analysis[subscription_flag] ),
+        COUNTROWS( bank_analysis ),
+        0
+    ) * 100,
+    bank_analysis[housing] = "yes",
+    bank_analysis[loan] = "yes",
+    bank_analysis[balance] < 0
+)
+
+
+// =============================================================================
+// GROUP G — FORMATTING & DISPLAY MEASURES
+// Clean formatted strings for card visuals and tooltips.
+// =============================================================================
+
+Conversion Rate Formatted =
+FORMAT( [Conversion Rate %] / 100, "0.00%" )
+
+// -----------------------------------------------------------------------------
+
+CPA Formatted =
+"₹" & FORMAT( [Cost Per Acquisition INR], "#,##0" )
+
+// -----------------------------------------------------------------------------
+
+Total Cost Formatted =
+"₹" & FORMAT( [Total Campaign Cost Lakh], "0.00" ) & "L"
+
+// -----------------------------------------------------------------------------
+
+Wasted Spend Formatted =
+"₹" & FORMAT( [Wasted Spend Lakh], "0.00" ) & "L"
+
+// -----------------------------------------------------------------------------
+
+Warm Lead Multiplier Formatted =
+FORMAT( [Warm Lead Multiplier], "0.0" ) & "×"
+
+// -----------------------------------------------------------------------------
+
+Duration Ratio Formatted =
+FORMAT( [Duration Engagement Ratio], "0.0" ) & "×"
+
+// -----------------------------------------------------------------------------
+// Drives conditional text colour on KPI cards.
+// Use this as a conditional formatting field value rule.
+// If "Above Average" → font colour #1D9E75 (green)
+// If "Below Average" → font colour #E24B4A (red)
+// -----------------------------------------------------------------------------
+KPI Status =
+IF(
+    [Segment Conversion Rate %] >= [Overall Benchmark Rate],
+    "Above Average",
+    "Below Average"
+)
+
+// -----------------------------------------------------------------------------
+// Best month by conversion rate — for a "Did you know?" callout card.
+// Returns "March" as a text label (hardcoded from verified EDA output).
+// -----------------------------------------------------------------------------
+Best Month Label =
+VAR best_month =
+    TOPN(
+        1,
+        SUMMARIZE(
+            bank_analysis,
+            bank_analysis[month],
+            "rate", DIVIDE( SUM(bank_analysis[subscription_flag]), COUNTROWS(bank_analysis) )
+        ),
+        [rate], DESC
+    )
+RETURN
+    MAXX( best_month, bank_analysis[month] )
+
+
+// =============================================================================
+// END OF DAX MEASURES LIBRARY
+// Total measures: 46
+// =============================================================================
+// INTERVIEW QUICK REFERENCE:
+//
+// Q: "What DAX functions did you use?"
+// A: DIVIDE (safe division), CALCULATE (context modification), ALL (remove
+//    filter context for benchmark), FILTER (row-level filtering), AVERAGEX
+//    (iterator for conditional averages), SUMX (row-by-row calculation),
+//    TOPN (dynamic ranking), FORMAT (display formatting), IF/VAR/RETURN
+//    (conditional logic and variable declarations).
+//
+// Q: "Why do you use [Overall Benchmark Rate] instead of [Conversion Rate %]
+//     as the denominator in [Segment Lift]?"
+// A: "[Conversion Rate %] respects the current filter context — if I filter
+//    to 'retired' customers, it returns the retired conversion rate, not the
+//    overall average. [Overall Benchmark Rate] uses ALL(bank_analysis) to
+//    strip all filters and always return the overall 11.70% baseline.
+//    Using the wrong denominator would make the lift calculation meaningless —
+//    every segment would show a lift of 1.0."
+//
+// Q: "What's the difference between SUM and SUMX?"
+// A: "SUM aggregates a column directly. SUMX is an iterator — it evaluates
+//    an expression row by row and then aggregates. I used SUMX in
+//    [Est Annual Revenue EUR] to calculate balance × 0.20 × 0.015 for
+//    each individual subscriber row, then sum the results. You can't do
+//    that with SUM alone."
+// =============================================================================
