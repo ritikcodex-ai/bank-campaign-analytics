@@ -233,7 +233,7 @@ Load CSVs from `data/processed/` → follow `powerbi/build_guide.md` → add DAX
 **Analyst:** Ritik | BCA — Asian School of Business, Noida (2026)
 **Certifications:** Microsoft PL-300 (Power BI Data Analyst)
 **Stack:** SQL · Python · Power BI · Excel
-**GitHub:** [github.com/Ritik07777](https://github.com/Ritik07777)
+**GitHub:** [github.com/ritikcodex-ai](https://github.com/ritikcodex-ai)
 
 ---
 
